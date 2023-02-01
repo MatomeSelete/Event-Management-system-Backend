@@ -4,7 +4,8 @@
   "info": {
     "singularName": "booking",
     "pluralName": "bookings",
-    "displayName": "Booking"
+    "displayName": "Booking",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,9 +20,6 @@
     },
     "Email": {
       "type": "email"
-    },
-    "PhoneNumber": {
-      "type": "biginteger"
     },
     "GroupName": {
       "type": "string"
@@ -39,6 +37,9 @@
       "type": "string"
     },
     "Package": {
+      "type": "string"
+    },
+    "PhoneNumber": {
       "type": "string"
     }
   }
