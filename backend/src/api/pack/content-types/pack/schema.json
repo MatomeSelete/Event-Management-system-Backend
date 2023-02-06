@@ -4,7 +4,8 @@
   "info": {
     "singularName": "pack",
     "pluralName": "packs",
-    "displayName": "pack"
+    "displayName": "pack",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

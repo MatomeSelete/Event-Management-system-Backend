@@ -41,6 +41,12 @@
     },
     "PhoneNumber": {
       "type": "string"
+    },
+    "reports": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::report.report",
+      "mappedBy": "bookings"
     }
   }
 }
