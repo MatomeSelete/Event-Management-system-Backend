@@ -4,7 +4,8 @@
   "info": {
     "singularName": "report",
     "pluralName": "reports",
-    "displayName": "report"
+    "displayName": "report",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,24 @@
       "relation": "manyToMany",
       "target": "api::booking.booking",
       "inversedBy": "reports"
+    },
+    "NameOfTheEvent": {
+      "type": "string"
+    },
+    "DateOfTheEvent": {
+      "type": "date"
+    },
+    "Venue": {
+      "type": "string"
+    },
+    "TotalNumberOfGuests": {
+      "type": "string"
+    },
+    "booking": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::booking.booking",
+      "inversedBy": "report"
     }
   }
 }

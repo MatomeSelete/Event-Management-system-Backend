@@ -21,9 +21,6 @@
     "Email": {
       "type": "email"
     },
-    "GroupName": {
-      "type": "string"
-    },
     "EventType": {
       "type": "string"
     },
@@ -47,6 +44,12 @@
       "relation": "manyToMany",
       "target": "api::report.report",
       "mappedBy": "bookings"
+    },
+    "report": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "booking"
     }
   }
 }
