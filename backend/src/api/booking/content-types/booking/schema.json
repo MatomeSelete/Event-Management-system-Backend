@@ -41,6 +41,12 @@
     },
     "reports": {
       "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::report.report",
+      "mappedBy": "bookings"
+    },
+    "report": {
+      "type": "relation",
       "relation": "oneToMany",
       "target": "api::report.report",
       "mappedBy": "booking"

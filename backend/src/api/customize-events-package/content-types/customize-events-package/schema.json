@@ -4,15 +4,26 @@
   "info": {
     "singularName": "customize-events-package",
     "pluralName": "customize-events-packages",
-    "displayName": "customizeEventsPackage"
+    "displayName": "customizeEventsPackage",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "event_package": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
